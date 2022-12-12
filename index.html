@@ -7,7 +7,147 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/estilos.css">
   <title>Ejercicio grid</title>
-
+ <STyle>
+ 
+  *{
+     font-family: 'Barlow Semi Condensed', sans-serif;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+  }
+  body{
+     display: flex;
+     height: 100vh;
+     background-color: hsl(0, 0%, 81%);
+     justify-content: center;
+     align-items: center;
+  }
+ 
+  .objectos-grid{
+     display:grid;
+     justify-content: center;
+     align-items: center;
+     width: 80%;
+     grid-template-columns: repeat( 4, 280px);
+     grid-template-rows: repeat( 2 , 280px);
+     grid-gap: 20px;
+     row-gap: 10px;
+     
+  }
+  .objecto-grid-1{
+     background: hsl(263, 55%, 52%);
+     color: hsl(0, 0%, 100%);
+      grid-column: 1 / 3;
+      grid-row: 1 / 1;
+      padding: 40px;
+      border-radius: 10px;
+      
+      justify-self: start;
+  }
+  .objecto-grid-2{
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(0, 0%, 100%);
+   grid-column: 3/4;
+   grid-row: 1 /2 ;
+   padding: 40px;
+   border-radius: 10px;
+ }
+ .objecto-grid-3{
+     background-color: hsl(0, 0%, 100%);
+     grid-row: 1/3;
+     padding: 40px;
+     border-radius: 10px;
+     
+ }
+ 
+ 
+ .objecto-grid-4{
+     background-color: hsl(0, 0%, 100%);
+   grid-column:1/2 ;
+   grid-row:2/2 ;
+   padding: 40px;
+   border-radius: 10px;
+ }
+ .objecto-grid-4 .etiqueta-paragrah{
+         
+         color: rgb(92, 91, 91);
+     
+ }
+ .objecto-grid-5{
+ background-color: hsl(219, 29%, 14%) ;
+ color: hsl(0, 0%, 100%);
+   grid-column:2/4 ;
+   grid-row:2/3 ;
+   padding: 40px;
+   border-radius: 10px;
+ }
+ .objectos-grid figure img{
+     
+   border-radius: 50%;
+   width: 40px;
+ }
+ .objectos-grid .etiqueta_name{
+     font-size: 13px;
+     width: 100%;
+     height: 13px;
+    margin: 0;
+ 
+ }
+ .objectos-grid .etiqueta_verifition{
+     font-size: 13px;
+     color: darkgrey; 
+     margin: 0;
+     width: 100%;
+     height: 13px;
+ }
+ .objectos-grid .etiqueta_title{
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 25px;
+    z-index: 3;
+ }
+ 
+ .orden{
+     display: inline-flex;
+     flex-direction: row;
+   
+ }
+ .columna{
+     margin-left: 15px;
+ }
+ .objectos-grid .etiqueta-paragrah {
+     font-size: 12px;
+ }.objecto-grid-3 .etiqueta-paragrah{
+     color: rgb(92, 91, 91);
+     font-size: 13px;
+    
+ }
+ @media (max-width:1000px){
+     .objectos-grid{
+         display: flex;
+         flex-direction: column;
+         flex-wrap: wrap;
+         margin-top: 1000px;
+     }   
+     .objecto-grid-1{
+         width: 100%;
+     }
+     .objecto-grid-2{
+         
+     }
+     .objecto-grid-3{
+         
+     }
+     .objecto-grid-4{
+         
+     }
+     .objecto-grid-5{
+         
+     }
+  
+     
+ 
+ }</STyle>
  
 </head>
 <body>
