@@ -113,7 +113,7 @@ color: hsl(0, 0%, 100%);
     font-size: 13px;
    
 }
-@media (max-width:1000px){
+@media (max-width:1200px){
     .objectos-grid{
         display: flex;
         flex-direction: column;
